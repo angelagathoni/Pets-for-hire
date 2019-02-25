@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="Bootwork/css/bootstrap.css">
+    <link rel="stylesheet" href="Styling%20and%20sheet.css">
+    <a href="Index.html" class="d">Home page</a>
+    <a href="Modal.html" class="d">Fill out form</a>
+</head>
+<body>
+<br>
+<h2 style="color: white">Hire form</h2>
+<!--Button to open modal-->
+<button type="button" class="btn btn-dark" data-toggle="modal" data-target="#myModal">
+    Form Modal
+</button>
+<!--The modal-->
+<div class="modal" id="myModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <!--modal header-->
+            <div class="modal-header">
+                <h4 class="modal-title">Modal</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <!--Modal body-->
+            <div class="modal-body">
+                <div class="container">
+                    <h1>Fill in hire form</h1>
+                    <form action="">
+                        <div class="form-group">
+                            <label for="nm">Enter name</label>
+                            <input type="text" id="nm" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Enter your Email address</label>
+                            <input type="email" id="email" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="lk">Enter drop off location</label>
+                            <input type="text" id="lk" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="an">Type of animal</label>
+                            <input type="text" id="an" class="form-control">
+                        </div>
+                        <h4>Gender</h4>
+                        <div class="form-group">
+                            <label for="bam">
+                                <input type="radio" name="optradio" class="form-check-input" id="bam">Female
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <label for="bom">
+                                <input type="radio" name="optradio" class="form-check-input" id="bom">Male
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <label for="comment">Enter any other specifications</label>
+                            <textarea name="textarea" id="comment" cols="5" rows="5" class="form-control"></textarea>
+                        </div>
+                        <button class="btn btn-success" type="submit">Submit</button>
+                        <button class="btn btn-success" type="reset">Refresh</button>
+
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="Bootwork/js/jquery.js"></script>
+<script src="Bootwork/js/bootstrap.js"></script>
+</body>
+</html>
